@@ -1,6 +1,6 @@
 # download antigen (zsh plugin manager)
 if [ ! -f ~/.zsh/antigen.zsh ]; then 
-  curl -L git.io/antigen-nightly > ~/.zsh/antigen.zsh
+  curl -Lo git.io/antigen-nightly ~/.zsh/antigen.zsh --create-dirs
 fi
 source ~/.zsh/antigen.zsh
 
