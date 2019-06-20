@@ -7,7 +7,7 @@ else
   source ~/.vim/vundle.vim
 endif
 
-set number
+set number relativenumber
 set laststatus=2
 set noshowmode
 
