@@ -19,3 +19,6 @@ endfor
 map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
+
+" custom file extensions for syntax highlighting
+autocmd BufNewFile,BufRead *.zshrc set syntax=zsh
