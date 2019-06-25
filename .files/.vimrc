@@ -3,6 +3,8 @@ if empty(glob('~/.vim/bundle/Vundle.vim'))
   silent !git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim	
   source ~/.vim/vundle.vim
   PluginInstall
+  " run the YCM external binary install script
+  ! python ~/.vim/bundle/YouCompleteMe/install.py
 else
   source ~/.vim/vundle.vim
 endif
