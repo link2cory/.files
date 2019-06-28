@@ -17,10 +17,5 @@ for f in split(glob('~/.vimrc.d/*.vim'), '\n')
     exe 'source' f
 endfor
 
-" incsearch plugin
-map / <Plug>(incsearch-forward)
-map ? <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
-
 " custom file extensions for syntax highlighting
 autocmd BufNewFile,BufRead *.zshrc set syntax=zsh
