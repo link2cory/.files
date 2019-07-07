@@ -4,11 +4,6 @@ if [ ! -f ~/.zsh/antigen.zsh ]; then
 fi
 source ~/.zsh/antigen.zsh
 
-# break the config into pieces
-for file in ~/.zshrc.d/*.zshrc; do
-  source "$file"
-done
-
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -31,3 +26,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=2'
 # add bin and local/bin to PATH
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/.local/bin
+
+# break the config into pieces
+for file in ~/.zshrc.d/*.zshrc; do
+  source "$file"
+done
