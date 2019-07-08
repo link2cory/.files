@@ -19,3 +19,6 @@ endfor
 
 " custom file extensions for syntax highlighting
 autocmd BufNewFile,BufRead *.zshrc set syntax=zsh
+
+
+let test#strategy = "dispatch_background"

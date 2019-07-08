@@ -17,6 +17,12 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'ycm-core/YouCompleteMe'
 " NERDTree file system explorer
 Plugin 'scrooloose/nerdtree'
+" Dispatch asynchronous make and test runner
+Plugin 'tpope/vim-dispatch'
+" vim-test for granular test running
+Plugin 'janko/vim-test'
+" test-coverage highlighting (python only!)
+Plugin 'mgedmin/coverage-highlight.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo

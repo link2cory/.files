@@ -1,7 +1,11 @@
+" make navigating splits more comfortable
 nnoremap <C-J> <C-w>j
 nnoremap <C-K> <C-w>k
 nnoremap <C-H> <C-w>h
 nnoremap <C-L> <C-w>l
+
+"run automated testing
+nnoremap <silent> <C-t> :w<CR>:TestNearest<CR>
 
 " stay away from the escape key
 inoremap gg <Esc>
