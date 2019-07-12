@@ -23,6 +23,9 @@ antigen apply
 # zsh-autosuggestions settings
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=2'
 
+# add completion scripts to fpath
+fpath=(~/.zsh/completion $fpath)
+
 # add bin and local/bin to PATH
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/.local/bin
