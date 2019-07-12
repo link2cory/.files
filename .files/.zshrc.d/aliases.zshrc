@@ -11,3 +11,12 @@ alias ll='ls -lp'
 alias la='ls -lap'
 
 alias grep='grep --color=auto --exclude-dir={.git}'
+
+# git shorthand
+alias gs='git status'
+alias gc='git commit -m'
+alias gd='git diff'
+alias ga='git add'
+alias gap='git add -p'
+alias gp='git push'
+alias gl='git log --pretty'
