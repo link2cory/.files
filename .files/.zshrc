@@ -26,6 +26,10 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=2'
 # add completion scripts to fpath
 fpath=(~/.zsh/completion $fpath)
 
+# set default editor to vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # add bin and local/bin to PATH
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/.local/bin
