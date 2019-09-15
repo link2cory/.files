@@ -25,3 +25,22 @@ alias gp='git push'
 alias gl='git log --pretty'
 alias gcb='git checkout -b'
 alias gb='git branch'
+
+# docker 
+alias di='docker image'
+alias dt='docker container'
+alias dv='docker volume'
+alias dn='docker network'
+
+# docker machine
+alias dm='docker-machine'
+
+# docker compose
+alias dc='docker-compose'
+alias dcu='docker-compose up'
+alias dcd='docker-compose down'
+alias dcr='docker-compose restart'
+alias dcl='docker-compose logs'
+
+# custom docker scripts
+alias dpa='docker-prune-all'
