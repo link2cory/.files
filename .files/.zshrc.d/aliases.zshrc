@@ -12,6 +12,9 @@ alias la='ls -lap'
 
 alias grep='grep --color=auto --exclude-dir={.git}'
 
+# tree shorthand
+alias t='tree'
+
 # git shorthand
 alias gs='git status'
 alias gc='git commit -m'
