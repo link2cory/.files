@@ -6,6 +6,8 @@ source ~/.zsh/antigen.zsh
 
 bindkey -v
 # End of lines configured by zsh-newuser-install
+
+autoload -U colors && colors
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/cory/.zshrc'
 
@@ -26,6 +28,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=2'
 # add completion scripts to fpath
 fpath=(~/.zsh/completion $fpath)
 
+# 10ms for key sequences
+KEYTIMEOUT=1
+
 # set default editor to vim
 export VISUAL=vim
 export EDITOR="$VISUAL"
@@ -38,3 +43,11 @@ export PATH=$PATH:~/.local/bin
 for file in ~/.zshrc.d/*.zshrc; do
   source "$file"
 done
+#compdef toggl
+_toggl() {
+  eval $(env COMMANDLINE="${words[1,$CURRENT]}" _TOGGL_COMPLETE=complete-zsh  toggl)
+}
+if [[ "$(basename -- ${(%):-%x})" != "_toggl" ]]; then
+  autoload -U compinit && compinit
+  compdef _toggl toggl
+fi
