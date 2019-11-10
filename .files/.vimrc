@@ -9,10 +9,17 @@ else
   source ~/.vim/vundle.vim
 endif
 
+" display line numbers
 set number relativenumber
+
+" get to normal mode faster
+set timeoutlen=1000
+set ttimeoutlen=0
+
 set laststatus=2
 set noshowmode
 
+" execute the directory config
 for f in split(glob('~/.vimrc.d/*.vim'), '\n')
     exe 'source' f
 endfor
