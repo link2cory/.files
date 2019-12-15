@@ -1,6 +1,9 @@
 # deal with tmux 256 color dealio
 alias tmux='tmux -2'
 
+# force fzf to use tmux panes
+alias fzf=fzf-tmux
+
 # disable flow control in the terminal while vim is running
 alias vim="stty stop '' -ixoff ; vim"
 ttyctl -f
