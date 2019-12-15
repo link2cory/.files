@@ -1,15 +1,6 @@
-" make navigating splits more comfortable
-nnoremap <C-J> <C-w>j
-nnoremap <C-K> <C-w>k
-nnoremap <C-H> <C-w>h
-nnoremap <C-L> <C-w>l
-
 "run automated testing
 nnoremap <silent> <C-t> :w<CR>:TestNearest<CR>
 
-" stay away from the escape key
-inoremap gg <Esc>
-inoremap <Esc> <NOP>
 " incsearch plugin
 map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
@@ -29,4 +20,6 @@ nnoremap <silent> <C-S> :<C-u>Update<CR>
 inoremap <silent> <C-S> <C-o>:<C-u>Update<CR> 
 nnoremap qq :q!<CR>
 nnoremap qw :wq<CR>
+
+
 
