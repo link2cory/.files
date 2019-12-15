@@ -34,6 +34,7 @@ alias di='docker image'
 alias dt='docker container'
 alias dv='docker volume'
 alias dn='docker network'
+alias dl='docker logs'
 
 # docker machine
 alias dm='docker-machine'
