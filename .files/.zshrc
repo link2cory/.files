@@ -32,7 +32,7 @@ fpath=(~/.zsh/completion $fpath)
 KEYTIMEOUT=1
 
 # set default editor to vim
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # add bin and local/bin to PATH

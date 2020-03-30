@@ -5,7 +5,8 @@ alias tmux='tmux -2'
 alias fzf=fzf-tmux
 
 # disable flow control in the terminal while vim is running
-alias vim="stty stop '' -ixoff ; vim"
+alias vim="stty stop '' -ixoff ; nvim"
+alias vimdiff="nvim -d"
 ttyctl -f
 
 # always use ls colors

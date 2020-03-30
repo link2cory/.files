@@ -20,6 +20,7 @@ tags
 # ignore the contents of the .vim/bundle directory
 # vundle will be autoinstalled by a script in the .vimrc
 .files/.vim/bundle/*
+.files/.config/nvim/plugged/*
 
 # ignore the contents of the autoload directory, it will be 
 # populated dynamically
