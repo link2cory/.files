@@ -20,6 +20,17 @@ nnoremap <silent> <C-S> :<C-u>Update<CR>
 inoremap <silent> <C-S> <C-o>:<C-u>Update<CR> 
 nnoremap qq :q!<CR>
 nnoremap qw :wq<CR>
+nnoremap <C-r> :source ~/.vimrc<CR>
 
+let g:tmux_navigator_no_mappings = 1
 
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+"nnoremap <silent> {Previous-Mapping} :TmuxNavigatePrevious<cr>
 
+" ale remaps
+nmap <silent> <A-k> <Plug>(ale_previous_wrap)
+nmap <silent> <A-j> <Plug>(ale_next_wrap)
+nnoremap <silent> af :ALEFix<CR>

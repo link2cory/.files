@@ -15,7 +15,8 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'ycm-core/YouCompleteMe'
+"Plugin 'ycm-core/YouCompleteMe'
+Plugin 'neoclide/coc.nvim'
 " NERDTree file system explorer
 Plugin 'scrooloose/nerdtree'
 " Dispatch asynchronous make and test runner
@@ -24,6 +25,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'janko/vim-test'
 " test-coverage highlighting (python only!)
 Plugin 'mgedmin/coverage-highlight.vim'
+Plugin 'dense-analysis/ale'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
