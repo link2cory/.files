@@ -26,7 +26,7 @@ alias gd='git diff'
 alias ga='git add'
 alias gap='git add -p'
 alias gp='git push'
-alias gl='git log --pretty'
+alias gl='git log --oneline --graph'
 alias gcb='git checkout -b'
 alias gb='git branch'
 
@@ -49,3 +49,19 @@ alias dcl='docker-compose logs'
 
 # custom docker scripts
 alias dpa='docker-prune-all'
+
+# pipenv shortcuts
+alias pesh='pipenv shell'
+
+# Jenkins 
+alias jenkins='docker run -p 8080:8080 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v jenkins_home:/var/jenkins_home \
+  --name jenkins \
+  -d \
+  my_jenkins:latest'
+#-v /home/cory/.kube/:/var/jenkins_home/.kube/ \
+
+# spotify TUI
+alias spt='systemctl --user restart spotifyd.service \
+  && spt'
