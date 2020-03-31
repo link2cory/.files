@@ -10,6 +10,7 @@ bindkey -v
 autoload -U colors && colors
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/cory/.zshrc'
+zstyle ':completion:*' select-prompt ''
 
 autoload -Uz compinit
 compinit
