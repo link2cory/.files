@@ -1,0 +1,12 @@
+{
+  "diagnostic.enable": false,
+  "suggest.noselect": false,
+  "suggest.enablePreview": false,
+  "tsserver.npm": "/usr/bin/npm",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "snippets.extends": {
+    "javascriptreact": ["javascript"],
+    "typescriptreact": ["javascript", "javascript-jasmine-arrow"],
+    "typescript": ["javascript", "javascript-jasmine-arrow"]
+  }
+}
