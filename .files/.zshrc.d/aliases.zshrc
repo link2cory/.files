@@ -22,6 +22,9 @@ alias cat='bat'
 # tree shorthand
 alias t='tree'
 
+# firefox shortcut
+alias ff='firefox'
+
 # git shorthand
 alias gs='git status'
 alias gc='git commit -m'
