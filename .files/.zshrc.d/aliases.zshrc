@@ -59,6 +59,9 @@ alias dpa='docker-prune-all'
 # pipenv shortcuts
 alias pesh='pipenv shell'
 
+# creat-react-app
+alias cra='create-react-app'
+
 # Jenkins 
 alias jenkins='docker run -p 8080:8080 \
   -v /var/run/docker.sock:/var/run/docker.sock \
