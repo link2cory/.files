@@ -1,0 +1,73 @@
+snippet t "A simple HTML tag" b
+<${1:div}>
+	$2
+</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet tag_one "A one liner tag"
+<${1:h1}>$2</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet todo "This is a TODO reminder" b
+<!-- TODO: `echo $USER` ${1:desc} `!v strftime("%c")` -->
+endsnippet
+
+snippet a
+<a href="$1"${2: class="${3:link}"}>
+	$0
+</a>
+endsnippet
+
+snippet date
+${2:${1:`date +%d`}.`date +%m`}.`date +%Y`
+endsnippet
+
+snippet DOC "standard doc header"
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<title>$1</title>
+	</head>
+</html>
+endsnippet
+
+snippet jumbo "jumbotron template" 
+	<header class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>$1</h1>
+					<h2>$2</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+endsnippet
+
+snippet container "bootstrap container"
+	<div class="container container-fluid">
+		<div class="row">
+			<div class="column">
+				$1
+			</div>
+		</div>
+	</div>
+endsnippet
+
+snippet row "Bootstrap row" 
+	<div class="row">
+		<div class="column">
+			$1
+		</div>
+	</div>
+endsnippet
+
+snippet column "Bootstrap column"
+	<div class="column">
+		$1
+	</div>
+endsnippet

@@ -1,0 +1,15 @@
+snippet fc "Functional Component" b
+const $1 = ($2) => return {(
+	$3
+)}
+endsnippet
+
+snippet fco "One line Functional Component" b
+const $1 = ($2) => $3
+endsnippet
+
+snippet it "Jest Test template" b
+it('should render correctly', () => {
+	expect(wrapper.find('div')).toHaveLength(1)
+})
+endsnippet
