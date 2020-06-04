@@ -16,7 +16,29 @@ augroup END
 
 let g:ale_set_highlights = 1
 
+let g:ale_typescript_prettier_use_local_config = 1
+
+" Linters
 let g:ale_linters_explicit = 1
 let g:ale_linters = {
-\ 'javascript': ['eslint']
+\ 'javascript': ['eslint'],
+\ 'typescript': ['eslint', 'tsserver'],
+\ 'python': ['mypy']
+\}
+
+" python specific
+let g:ale_python_auto_pipenv = 1
+let g:ale_python_mypy_auto_pipenv = 1
+let g:ale_python_mypy_executable = 'pipenv'
+let g:ale_python_mypy_ignore_invalid_syntax = 1
+
+" Fixers
+let g:ale_fix_on_save = 1
+nmap <C-f> <Plug>(ale_fix)
+let g:ale_fixers = {
+\  'javascript': ['prettier'],
+\  'typescript': ['prettier', 'eslint'],
+\  'html': ['prettier'],
+\  'css': ['prettier'],
+\  'python': ['black'],
 \}
