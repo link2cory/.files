@@ -3,6 +3,9 @@ call plug#begin('~/.config/nvim/plugged')
 "intelisense engine for vim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" snippets
+Plug 'SirVer/ultisnips'
+
 " linting and fixing
 Plug 'dense-analysis/ale'
 
