@@ -18,8 +18,11 @@
 "                           \|endif
 "nnoremap <silent> <C-S> :<C-u>Update<CR>
 "inoremap <silent> <C-S> <C-o>:<C-u>Update<CR> 
-nnoremap qq :q!<CR>
-nnoremap qw :wq<CR>
+nnoremap <C-w> :wnext<cr>
+nnoremap <C-s> :w<cr>
+nnoremap <C-q> :bd<cr>
+nnoremap qq :qa!<cr>
+nnoremap qw :wqa<CR>
 nnoremap <C-r> :source ~/.config/nvim/init.vim<CR>
 :let mapleader=","
 
