@@ -34,6 +34,10 @@ Plug 'christoomey/vim-tmux-navigator'
 " icons
 Plug 'ryanoasis/vim-devicons'
 
+"typescript syntax highlighting
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
 " status line
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
