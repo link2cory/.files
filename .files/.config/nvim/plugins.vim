@@ -6,6 +6,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " snippets
 Plug 'SirVer/ultisnips'
 
+" Surround
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+
 " linting and fixing
 Plug 'dense-analysis/ale'
 
