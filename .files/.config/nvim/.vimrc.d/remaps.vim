@@ -24,7 +24,7 @@ nnoremap <C-q> :bd<cr>
 nnoremap qq :qa!<cr>
 nnoremap qw :wqa<CR>
 nnoremap <C-r> :source ~/.config/nvim/init.vim<CR>
-:let mapleader=","
+:let mapleader=" "
 
 let g:tmux_navigator_no_mappings = 1
 
