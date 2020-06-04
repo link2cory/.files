@@ -33,8 +33,31 @@ nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 " nnoremap <silent> {Previous-Mapping} :TmuxNavigatePrevious<cr>
+"
+" open a real terminal
+function! OpenTerm()
+  silent !clear
+  silent !tmux split-window -l 10 -f && tmux select-pane -D -T vim-term
+  " silent !clear
+  " silent !tmux select-pane -D -T vim-term
+  " :!tmux split-window -l 10 -f
+  " :!tmux select-pane -D -T vim-term
+endfunction
+" nnoremap <silent> <A-t> :!tmux split-window -l 10 -f && tmux select-pane -D -T vim-term<cr>
+nnoremap <silent> <A-t> :call OpenTerm()<cr>
 
 " ale remaps
 nmap <silent> <A-k> <Plug>(ale_previous_wrap)
 nmap <silent> <A-j> <Plug>(ale_next_wrap)
 nnoremap <silent> af :ALEFix<CR>
+
+" buffer control
+nnoremap <silent> <Left> :bp<cr>
+nnoremap <silent> <Right> :bn<cr>
+
+" clear search
+nnoremap <Leader><space> :let @/=""
+
+" buffer jetpack
+nnoremap <leader>l :ls<CR>:b<space>
+
