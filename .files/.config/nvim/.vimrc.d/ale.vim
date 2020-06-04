@@ -2,6 +2,9 @@
 let g:ale_list_window_size = 10
 let g:ale_open_list = 1
 
+" always lint on any text changed
+"let g:ale_lint_on_text_changed = 'always'
+
 " close the error list when the buffer closes
 augroup CloseLoclistWindowGroup
 	autocmd!
