@@ -16,6 +16,9 @@ alias la='ls -lap'
 
 alias grep='grep --color=auto --exclude-dir={.git}'
 
+# use bat instead of cat
+alias cat='bat'
+
 # tree shorthand
 alias t='tree'
 
