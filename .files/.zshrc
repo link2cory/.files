@@ -19,12 +19,10 @@ compinit
 antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen bundle ael-code/zsh-colored-man-pages
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle supercrabtree/k
 
 # Tell Antigen that you're done.
 antigen apply
-
-# zsh-autosuggestions settings
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=2'
 
 # add completion scripts to fpath
 fpath=(~/.zsh/completion $fpath)
@@ -39,6 +37,9 @@ export EDITOR="$VISUAL"
 # add bin and local/bin to PATH
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/.local/bin
+export PATH="$PATH:$(yarn global bin)"
+
+export ANDROID_SDK=/home/cory/Android/Sdk
 
 # break the config into pieces
 for file in ~/.zshrc.d/*.zshrc; do

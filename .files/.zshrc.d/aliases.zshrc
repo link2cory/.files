@@ -28,6 +28,7 @@ alias ff='firefox'
 # git shorthand
 alias gs='git status'
 alias gc='git commit -m'
+alias gca='git commit --amend'
 alias gd='git diff'
 alias ga='git add'
 alias gap='git add -p'
@@ -35,6 +36,8 @@ alias gp='git push'
 alias gl='git log --oneline --graph'
 alias gcb='git checkout -b'
 alias gb='git branch'
+alias grm='git rm'
+alias gm='git merge'
 
 # docker 
 alias di='docker image'
@@ -59,8 +62,11 @@ alias dpa='docker-prune-all'
 # pipenv shortcuts
 alias pesh='pipenv shell'
 
+# cookiecutter shortcuts
+alias cc='cookiecutter'
+
 # creat-react-app
-alias cra='create-react-app'
+alias cra='npx create-react-app'
 
 # Jenkins 
 alias jenkins='docker run -p 8080:8080 \

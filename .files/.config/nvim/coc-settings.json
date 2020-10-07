@@ -1,12 +1,17 @@
 {
-  "diagnostic.enable": false,
-  "suggest.noselect": false,
-  "suggest.enablePreview": false,
-  "tsserver.npm": "/usr/bin/npm",
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
-  "snippets.extends": {
-    "javascriptreact": ["javascript"],
-    "typescriptreact": ["javascript", "javascript-jasmine-arrow"],
-    "typescript": ["javascript", "javascript-jasmine-arrow"]
-  }
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "python",
+    "prisma"
+  ],
+  "tsserver.formatOnType": true,
+  "tsserver.enableJavascript": true,
+  "coc.preferences.formatOnType": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "prettier.disableSuccessMessage": true,
+  "python.formatting.provider": "black"
 }

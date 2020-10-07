@@ -31,6 +31,7 @@ set backupcopy=yes
 set updatetime=100
 
 filetype plugin on
+autocmd FileType json syntax match Comment +\/\/.\+$+
 
 set termguicolors
 
@@ -41,3 +42,9 @@ autocmd BufNewFile,BufRead *.zshrc set syntax=zsh
 for f in split(glob('~/.config/nvim/.vimrc.d/*.vim'), '\n')
     exe 'source' f
 endfor
+
+let g:python3_host_prog='~/.local/share/virtualenvs/nvim-ZwlgyrD5/bin/python'
+
+" enable project level settings
+set exrc
+set secure
