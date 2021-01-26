@@ -7,11 +7,12 @@
     "python",
     "prisma"
   ],
-  "tsserver.formatOnType": true,
-  "tsserver.enableJavascript": true,
   "coc.preferences.formatOnType": true,
   "eslint.autoFixOnSave": true,
   "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "tsserver.formatOnType": true,
+  "tsserver.enableJavascript": true,
+  "typescript.preferences.quoteStyle": "double",
   "prettier.disableSuccessMessage": true,
   "python.formatting.provider": "black"
 }
