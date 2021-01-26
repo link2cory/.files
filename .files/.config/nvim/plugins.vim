@@ -56,6 +56,10 @@ Plug 'christoomey/vim-tmux-navigator'
 " icons
 Plug 'ryanoasis/vim-devicons'
 
+
+" Syntax Highlighting
+Plug 'neoclide/jsonc.vim'
+
 "typescript syntax highlighting
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'

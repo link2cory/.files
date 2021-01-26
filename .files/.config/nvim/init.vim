@@ -32,6 +32,7 @@ set updatetime=100
 
 filetype plugin on
 autocmd FileType json syntax match Comment +\/\/.\+$+
+autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 
 set termguicolors
 
