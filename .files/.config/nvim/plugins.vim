@@ -3,14 +3,16 @@ call plug#begin('~/.config/nvim/plugged')
 "intelisense engine for vim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = [
-\  'coc-tsserver',
-\  'coc-jest',
-\  'coc-html',
-\  'coc-snippets',
 \  'coc-css',
+\  'coc-eslint',
+\  'coc-html',
+\  'coc-jest',
 \  'coc-json',
-\  'coc-python',
+\  'coc-prettier',
 \  'coc-prisma',
+\  'coc-python',
+\  'coc-snippets',
+\  'coc-tsserver'
 \]
 
 " snippets
