@@ -83,3 +83,6 @@ alias jenkins='docker run -p 8080:8080 \
 # spotify TUI
 alias spt='systemctl --user restart spotifyd.service \
   && spt'
+
+# awesomeWM
+alias wmr='echo "awesome.restart()" | awesome-client'

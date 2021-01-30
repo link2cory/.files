@@ -1,6 +1,7 @@
 # fzf layout options
-export FZF_DEFAULT_COMMAND='fd --type f'
-export FZF_DEFAULT_OPTS='--height 20% --border --extended'
+export FZF_DEFAULT_COMMAND='fd --hidden --type f'
+# export FZF_DEFAULT_OPTS='--height 20% --border --extended'
+export FZF_DEFAULT_OPTS='--border --extended'
 
 # using tmux
 export FZF_TMUX=1
@@ -18,7 +19,7 @@ join-lines() {
 }
 
 fzf_preview() {
-    fd --type f \
+    fd -H --type f \
       | fzf \
         --multi \
         --preview-window right:70% \
@@ -33,9 +34,7 @@ fzf_edit() {
     vim -p $files
   fi
 }
-# fzf-edit-widget() LBUFFER+=$(edit)
+
 fzf-edit-widget() LBUFFER+=$(fzf_edit | join-lines)
 zle -N fzf_edit
 bindkey '^Y' fzf_edit
-
-

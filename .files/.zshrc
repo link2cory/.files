@@ -1,8 +1,10 @@
+export TERM="xterm-256color"
+
 # download antigen (zsh plugin manager)
-if [ ! -f ~/.zsh/antigen.zsh ]; then 
-  curl -Lo git.io/antigen-nightly ~/.zsh/antigen.zsh --create-dirs
-fi
-source ~/.zsh/antigen.zsh
+#if [ ! -f ~/.zsh/antigen.zsh ]; then 
+#  curl -Lo git.io/antigen-nightly ~/.zsh/antigen.zsh --create-dirs
+#fi
+source /usr/share/zsh/share/antigen.zsh
 
 bindkey -v
 # End of lines configured by zsh-newuser-install
@@ -37,9 +39,9 @@ export EDITOR="$VISUAL"
 # add bin and local/bin to PATH
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/.local/bin
-export PATH="$PATH:$(yarn global bin)"
+# export PATH="$PATH:$(yarn global bin)"
 
-export ANDROID_SDK=/home/cory/Android/Sdk
+# export ANDROID_SDK=/home/cory/Android/Sdk
 
 # break the config into pieces
 for file in ~/.zshrc.d/*.zshrc; do

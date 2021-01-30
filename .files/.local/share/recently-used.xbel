@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///tmp/mozilla_cory0/alacritty.yml" added="2021-01-26T22:48:01.451385Z" modified="2021-01-26T22:48:01.451393Z" visited="2021-01-26T22:48:01.451386Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-yaml"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-26T22:48:01.451389Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_cory0/alacritty-1.yml" added="2021-01-26T22:48:19.613996Z" modified="2021-01-26T22:48:19.614004Z" visited="2021-01-26T22:48:19.613997Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-yaml"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-26T22:48:19.614000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/cory/Downloads/alacritty.yml" added="2021-01-26T22:49:00.732395Z" modified="2021-01-26T22:49:00.732402Z" visited="2021-01-26T22:49:00.732396Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-yaml"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-26T22:49:00.732398Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/cory/Downloads/Monster%20Manual%20Deluxe.pdf" added="2021-01-27T03:58:35.156075Z" modified="2021-01-27T03:58:35.156090Z" visited="2021-01-27T03:58:35.156076Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-27T03:58:35.156083Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/cory/Downloads/ExoMegacity.png" added="2021-01-27T20:07:16.796447Z" modified="2021-01-27T20:07:17.212602Z" visited="2021-01-27T20:07:16.796449Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-27T20:07:17.212599Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
